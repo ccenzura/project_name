@@ -19,6 +19,12 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+# PLUGINS
+MARKUP = ('md', 'ipynb')                # Add 'ipynb'
+PLUGIN_PATHS = ['./plugins']               # Ensure your plugin path is in it
+PLUGINS = ['ipynb2pelican']             # Name of the plugin
+IGNORE_FILES = ['.ipynb_checkpoints']   # Ignore cells with #ignore tag https://github.com/peijunz/ipynb2pelican#ignore-tag-ipynb_ignore
+
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
